@@ -36,7 +36,6 @@
 
 body {
     margin: 0;
-    overflow-x: hidden
 }
 
 button {
@@ -351,6 +350,7 @@ footer {
     background-color: var(--p10);
     color: white;
     justify-content: space-between;
+    overflow-x: hidden
 }
 
 footer a {
