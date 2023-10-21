@@ -1,0 +1,6 @@
+section div{
+    height: 100vh;
+}
+section:nth-child(even) div{
+    background-color: red;
+}

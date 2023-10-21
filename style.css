@@ -1,0 +1,239 @@
+:root {
+    --baseval: 24px;
+    --sidebarw: calc(var(--baseval) * 5);
+
+
+    --background: #141218;
+    --text: #D0CDC4;
+    --blockcolor: #211F26;
+    /* Use expression calc(var(--baseval)) as needed */
+
+    --headerfont: serif;
+    --bodyfont: sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text)
+}
+
+body>nav,
+header,
+main,
+footer {
+    margin-left: calc(var(--sidebarw) + var(--baseval) * 2);
+}
+
+header,section,footer{
+    padding: calc(var(--baseval)) 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+header,
+main, footer {
+    width: calc(100%/ 2 - var(--sidebarw));
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100%/ 2 - var(--sidebarw));
+    height: 100vh;
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* {
+    font-family: var(--bodyfont);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+nav a {
+    font-family: var(--headerfont);
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    margin-bottom: .0em
+}
+p{
+    margin-bottom: 1em
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button{
+    padding: 12px 24px;
+    border:0;
+    background-color: #F9F9F9;
+    font-size: 16px;
+    font-family: var(--bodyfont);
+    margin:auto;
+}
+
+/* Navigation */
+/* Primary Navigation */
+.primenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.primenav .mini {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: var(--sidebarw);
+    height: 95%;
+    padding: calc(var(--baseval)) calc(var(--baseval) * .5);
+
+}
+
+.primenav .mini button {
+    width: calc(var(--baseval) * 1.5);
+    height: calc(var(--baseval) * 1.5);
+}
+
+.primenav .mini .socials {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--baseval) * .5);
+    list-style: none;
+}
+
+/* Page Navigation */
+.pagenav {
+    position: sticky;
+    top: calc(var(--baseval));
+}
+
+.pagenav ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--baseval));
+    list-style: none;
+}
+
+.pagenav a {
+    text-decoration: none;
+    color: inherit
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--baseval);
+}
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    gap: calc( var(--baseval) * .75)
+}
+
+.block{
+    background-color: var(--blockcolor);
+    padding: 12px;
+}
+
+.seemore{
+    text-align: center;
+    height: 150px;
+    background-color: #211F26;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--baseval) * .5)
+}
+
+.seemore img{
+    height: 100px;
+    object-fit: cover;
+}
+
+div.rowalternating, div.rowspan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+div.rowalternating:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+img[data-type=1], svg[data-type=1]{
+    width: calc(var(--baseval) * 2)
+}
+
+[data-columns="2"] {
+    column-count: 2;
+    column-gap: 24px;
+}
+
+[data-span=full]{
+    width: 100%;
+}
+
+[data-span="threefourth"] {
+    width: calc(75% - var(--baseval) / 4);
+}
+
+[data-span="twothird"] {
+    width: calc(100% * 2 / 3 - var(--baseval) / 3);
+}
+
+[data-span="half"] {
+    width: calc(50% - var(--baseval) / 2);
+}
+
+ul[data-span="half"]{
+    padding-left: calc(var(--baseval));
+    width: calc(50% - var(--baseval) / 2 - var(--baseval));
+}
+
+.block[data-span="half"]{
+    width: calc(50% - var(--baseval) * 1.5);
+}
+
+[data-span="third"] {
+    width: calc(100% / 3 - var(--baseval) * 1.75);
+}
+
+.seemore[data-span="third"]{
+    width: calc(100% / 3 - var(--baseval) * .75);
+}
+
+[data-span="fourth"] {
+    width: calc(25% - var(--baseval) / 4);
+}
+
+[data-span="fifth"] {
+    width: calc(20% - var(--baseval) / 5);
+}
+
+[data-span="twofifths"] {
+    width: calc(30%  - var(--baseval)/ 5);
+}
+
+[data-span="sixth"] {
+    width: calc(100% / 6 - var(--baseval) / 6);
+}
