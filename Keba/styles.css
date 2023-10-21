@@ -166,9 +166,10 @@ section, footer {
     padding: 48px 100px;
 }
 
-section#skills {
+#skills {
     background-color: var(--p40);
     padding: 0;
+    overflow-x: hidden;
 }
 
 #skills ul {
