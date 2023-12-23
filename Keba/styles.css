@@ -368,7 +368,9 @@ footer ul{
     padding: 0;
 
 }
-
+#marquee{
+    background-color: red;
+}
 #marquee {
     height: 100px;
     background-color: var(--p40);
