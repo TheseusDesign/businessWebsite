@@ -369,6 +369,43 @@ footer ul{
 
 }
 
+#marquee {
+    height: 100px;
+    background-color: var(--p40);
+    padding: 0;
+
+    & * {
+        /* border: dotted 2px; */
+        transition: linear all 1s;
+    }
+
+    & .overflowing {
+        display: block;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+
+        & li {
+            display: flex;
+            padding: 16px 16px;
+            width: 140px;
+            list-style-type: none;
+            position: absolute;
+            margin-top: 26px;
+            font-size: .85em;
+            background-color: rgba(255,255,255,.6);
+            border: solid 1px white;
+            border-radius: 3px;
+            color: white;
+            justify-content: center;
+            vertical-align: middle;
+            text-align: center;
+            list-style-position: inside;
+        }
+    }
+}
+
 @media (max-width: 1400px) {
     #works {
         flex-direction: column;
