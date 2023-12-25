@@ -13,16 +13,17 @@
 html {
     scroll-behavior: smooth;
 }
-
+*{
+    transition: all .5s;
+    /* border: dashed 1px var(--p80); */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     overflow-x: hidden;
     margin: 0;
     width: 100%;
-
-    & * {
-        /* border: dotted 2px; */
-        transition: linear all .5s;
-    }
 }
 
 h1,

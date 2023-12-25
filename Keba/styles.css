@@ -31,11 +31,17 @@
 
 * {
     transition: all .5s;
-    border: dashed 1px var(--p80)
+    /* border: dashed 1px var(--p80); */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 button {
@@ -53,44 +59,47 @@ button:hover {
 }
 
 
-.mainnav {
+nav {
     position: fixed;
-    top: 90%;
-    width: 100%;
-    z-index: 1
-}
-
-.mainnav ul {
-    width: 27px;
-    padding: 3px 24px;
-    align-items: center;
-    gap: 18px;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    background-color: var(--n99);
-    box-shadow: 0px 0px 8px 0px rgba(0, 153, 255, 0.60);
-    margin: auto
-}
-
-.mainnav #contact {
-    padding: 6px 24px;
     background-color: var(--p40);
-    color: var(--n99)
-}
+    opacity: .6;
+    padding: 15px 17px;
+    top: 0px;
+    right: 0px;
+    transition: all .5s;
+    z-index: 3;
 
-.mainnav .hidden {
-    display: none;
-}
+    &:hover {
+        opacity: 1;
+    }
 
-.mainnav ul:hover {
-    padding: 3px 3px 3px 24px;
-    width: 275px;
-    overflow-x: hidden;
-}
+    & .base {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
 
-.mainnav ul:hover .hidden {
-    display: inline-block;
+        & svg {
+            width: 40px;
+            height: 28px;
+
+            &:hover{
+                scale: 1.05;
+            }
+        }
+
+        & button {
+            background: none;
+            border: none;
+
+            & svg {
+                width: 28px;
+            }
+
+            &:hover{
+                scale: 1.05;
+            }
+        }
+    }
 }
 
 header {
@@ -194,6 +203,13 @@ section, footer {
 #lead {
     display: flex;
     flex-direction: row;
+    gap: 24px;
+
+     & img{
+        width: 40%;
+        flex: 1;
+        object-fit: cover;
+     }
 }
 
 #lead .right {
@@ -408,6 +424,92 @@ footer ul{
     }
 }
 
+[data-elem-type="tripanel"]{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    & .concept{
+        display: flex;
+        flex-direction: column;
+
+        & img{
+            width: 100%;
+            height: 135px;
+            object-fit: fill;
+        }
+
+        & h3,p{
+            margin: 0 12px 12px 12px;
+        }
+    }
+
+    &[data-version="type-2"]{
+        & .panel{
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 500px;
+            width: calc(100% * 1 / 3 - 24px / 3);
+
+            & .top{
+                margin-top: 0;
+                background-color: var(--p40);
+                color: white;
+            }
+
+            & .main{
+                flex: 1;
+                display: flex;
+                align-items: center;
+            }
+
+            &[data-work="void-sphere"]{
+                & .main{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url(assets/voidpsherethumbnail.png);
+                }
+            }
+
+            & h3{
+                padding: 3px 24px;
+            }
+            & p{
+                padding: 12px 24px;
+                height: calc(100% + 24px * -1);
+                margin: 0;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                opacity: 0;
+            }
+        }
+        
+        &:hover{
+            & .panel{
+                width: calc(25% - 12px);
+                height: 400px;
+
+                &:hover{
+                    width: calc(50% - 12px);
+                    height: 500px;
+
+                    & p {
+                        opacity: 1;
+                        background-color: rgba(255,255,255,.6)
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 @media (max-width: 1400px) {
     #works {
         flex-direction: column;
@@ -427,6 +529,11 @@ footer ul{
         width: 30%;
         height: 150px;
         background-color: var(--p40)
+    }
+
+    #lead img{
+        width: 100%;
+        aspect-ratio: 2/1;
     }
 }
 
