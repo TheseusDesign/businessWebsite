@@ -47,7 +47,7 @@ button {
 
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     background-color: var(--color-p);
     opacity: .6;
     padding: 15px 17px;
