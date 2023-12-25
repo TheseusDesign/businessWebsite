@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     width: 100%;
+    height: 100%;
 }
 
 h1,
@@ -162,7 +163,7 @@ section {
         & li {
             display: flex;
             padding: 16px 16px;
-            width: 140px;
+            width: 160px;
             list-style-type: none;
             position: absolute;
             margin-top: 26px;
