@@ -1,0 +1,105 @@
+header{
+    background-color: #001F33;
+    display: flex;
+    flex-direction: row;
+    padding: 48px var(--padding-x);
+    align-items: center;
+    color: white;
+}
+
+main{
+    width: 100%;
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+
+    &:nth-child(even){
+        flex-direction: row-reverse
+    }
+
+    & img{
+        margin: auto 0 0 0;
+        width: 30%;
+    }
+
+    & .content{
+        color: white;
+        width: 60%;
+        flex: 1;
+        padding: 12px var(--padding-x);
+        
+        & ul{
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+            & li:nth-child(1){
+                font-weight: 700;
+            }
+        }
+
+        & .team{
+            display: flex;
+            flex-direction: column;
+
+            & .rollcredits{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                width: 100%;
+                overflow-x: auto;
+                padding-bottom:12px;
+
+                &::-webkit-scrollbar{
+                    height: 5px;
+                    border: 5px;
+                }
+                &::-webkit-scrollbar-track{
+                    background:rgba(255,255,255,.2);
+                }
+                &::-webkit-scrollbar-thumb{
+                    background: rgba(255,255,255,.6);
+                }
+                &::-webkit-scrollbar-thumb:hover{
+                    background: white;
+                }
+
+
+                & .person{
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    border-radius: 5px;
+                    overflow: clip;
+                    color: #001F33;
+                    flex: none;
+
+                    & img{
+                        height: 50px;
+                        width: 100%;
+                        background-color: #001F33;
+                    }
+
+                    & .txt{
+                        padding: 12px;
+
+                        & *{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#awake{
+        background: url(../assets/background.png)
+    }
+}

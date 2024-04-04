@@ -3,6 +3,7 @@
     --color-p40: #007ACC;
     --font-heading: 'Azeret Mono', monospace;
     --font-standard: Inter, sans-serif;
+    --padding-x: 48px;
 }
 
 * {
@@ -13,7 +14,8 @@
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -27,7 +29,7 @@ div#nav {
     z-index: 1;
     opacity: .6;
 
-    &:hover{
+    &:hover {
         opacity: 1;
     }
 
@@ -153,18 +155,19 @@ div#nav {
             flex-direction: column;
         }
 
-        & form{
+        & form {
             display: flex;
             flex-direction: column;
             gap: 6px;
 
-            & input,textarea{
+            & input,
+            textarea {
                 background-color: #E5F5FF;
                 border-radius: 5px;
                 border: none;
             }
 
-            & button{
+            & button {
                 width: 150px;
                 margin: auto;
             }
@@ -172,7 +175,7 @@ div#nav {
     }
 }
 
-footer{
+footer {
     background-color: #001F33;
     color: white;
     display: flex;
@@ -181,11 +184,11 @@ footer{
     align-items: center;
     padding: 12px 48px;
 
-    & .main-logo{
+    & .main-logo {
         width: 50%
     }
 
-    & ul{
+    & ul {
         padding: 0;
         list-style-type: none;
     }
