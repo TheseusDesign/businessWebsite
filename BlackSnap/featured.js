@@ -89,6 +89,11 @@ class featuredArt {
         // Create Carousel Button
         this.button.setAttribute('style', `background: url(${this.thumbnail}); background-size:cover; background-position: 100% 40%;`)
         targetDiv.querySelector(`.selContainer`).appendChild(this.button)
+
+        if (this.position == 0){
+            this.scene.setAttribute('class','isSelected')
+            this.button.setAttribute('class','isSelected')
+        }
     }
 }
 let featuredOBJ = []

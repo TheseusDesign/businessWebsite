@@ -137,9 +137,13 @@ section#featured {
             justify-content: center;
 
             &>div {
-                display: flex;
+                display: none;
                 flex-direction: row;
                 flex-wrap: wrap;
+
+                &.isSelected{
+                    display: flex;
+                }
 
                 &>img {
                     width: 50%;
@@ -207,6 +211,10 @@ section#featured {
         }
     }
 }
+
+section#featured .selection::-webkit-scrollbar-thumb {
+    background-color: #222;
+    }
 
 section#services {
     text-align: center;
