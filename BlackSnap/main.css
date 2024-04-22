@@ -25,11 +25,11 @@ body {
     margin: 0;
 
     * {
-        transition:all .5s ease-in;
-        -moz-transition:all .5s ease-in;
-        -ms-transition:all .5s ease-in;
-        -o-transition:all .5s ease-in;
-        -webkit-transition:all .5s ease-in;
+        transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -ms-transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -42,7 +42,11 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+li,
+label,
+form,
+textarea {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 300;
 }
@@ -92,12 +96,147 @@ nav {
         padding: 0;
         gap: 1em;
         align-items: center;
+        list-style: none;
+
+        .active a{
+            color: #33FF9E;
+        }
+
+        & a{
+            color: white;
+        }
     }
 }
+
+
+footer {
+    padding: 2rem 4rem;
+    background-color: #0A110F;
+    background-image: url(Assets/Background/bTexture_0.jpg);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & * {
+        flex: 1;
+    }
+
+    & .logoLink {
+        width: 30%;
+        height: fit-content;
+        min-width: 300px;
+        padding-bottom: 2rem;
+    }
+
+    & h2 {
+        display: none;
+        margin: 0;
+    }
+
+    & .links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 0%;
+        gap: .5rem;
+        min-width: 300px;
+
+        & * {
+            color: white;
+        }
+
+        &>div {
+            min-width: 250px;
+
+        }
+
+        & h3 {
+            margin: 0;
+        }
+
+        & ul {
+            padding: 0;
+            list-style: none;
+
+            & li * {
+                text-decoration: none;
+            }
+        }
+    }
+
+    & .copyright {
+        width: 100%;
+        flex: none;
+        text-align: center;
+    }
+}
+
 
 button {
     display: flex;
     padding: .5rem 1rem;
     width: fit-content;
     margin: auto;
+}
+
+div#connection {
+    display: flex;
+    background-color: rgba(18, 23, 21, .5);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+
+    & .container {
+        max-width: 1080px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #121715;
+        max-height: 85vh;
+        overflow: auto;
+        color: white;
+
+        &>img {
+            width: 30%;
+            flex: 1;
+            object-fit: cover;
+            min-width: 300px;
+        }
+
+        .form {
+            width: 60%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            min-width: 300px;
+
+            & form {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+
+                & .col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    color: white;
+                }
+
+                & button {
+                    margin: 0 0 0 auto;
+                    font-family: "Cormorant Garamond", serif;
+                    font-size: 20px;
+                    background-color: #F5F7F6;
+                    border: none;
+                    border-radius: 3px;
+                    color: #121715;
+                }
+            }
+
+        }
+    }
 }

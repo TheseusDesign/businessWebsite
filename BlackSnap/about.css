@@ -1,0 +1,106 @@
+header {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        font-size: 6vw;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        margin: 0 auto;
+        white-space: nowrap;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        & * {
+            margin: 0;
+            text-align: center;
+        }
+
+        & svg {
+            width: 100%;
+        }
+    }
+
+    & p{
+        font-size: 3vw;
+    }
+}
+
+section#me{
+    background-color: white;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    
+    & .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1080px;
+        margin: auto;
+        gap: 2rem;
+
+        & img{
+            width: 300px;
+            flex:1;
+            object-fit: cover;
+            object-position: 65% 0%;
+        }
+
+        & .txt{
+            min-width:300px;
+            flex: 1;
+
+            & .header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                & h2{
+                    font-size: 24px;
+                    margin: 0;
+                }
+
+                & .socials{
+                    display: flex;
+                    flex-direction: row;
+
+                    & a{
+                        display: flex;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 680px){
+    section#me .container .txt{
+        padding-left: 2rem;
+        border-left: 1px solid #121715;
+    }
+}
+@media (max-width: 680px){
+    section#me .container .txt{
+        padding-top: 2rem;
+        border-top: 1px solid #121715;
+    }
+}
