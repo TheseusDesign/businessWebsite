@@ -16,7 +16,7 @@ html,
 body {
     overflow-x: hidden;
     background-color: #222;
-    background: url("Assets/Background/bTexture_1.jpg") lightgray 0% 0% / 500px 500px repeat;
+    background: url("Assets/Background/bTexture_1.jpg");
     background-attachment: fixed;
 }
 
