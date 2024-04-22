@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "BlackSnap";
+    src:
+        url("Assets/Fonts/CarlaSansRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "BlackSnap";
+    src:
+        url("Assets/Fonts/CarlaSansLight.woff") format("woff");
+    font-weight: 200;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #222;
+    background: url("Assets/Background/bTexture_1.jpg") lightgray 0% 0% / 500px 500px repeat;
+    background-attachment: fixed;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    * {
+        transition:all .5s ease-in;
+        -moz-transition:all .5s ease-in;
+        -ms-transition:all .5s ease-in;
+        -o-transition:all .5s ease-in;
+        -webkit-transition:all .5s ease-in;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+h1 {
+    font-family: BlackSnap, "Kumbh Sans", sans-serif;
+    font-weight: 200;
+}
+
+h2,
+h3 {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 0px;
+    padding: 1em 4em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B0E0D;
+    opacity: .6;
+    position: fixed;
+    height: 56px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    & a.logo {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    & ul.navnav {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        padding: 0;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+button {
+    display: flex;
+    padding: .5rem 1rem;
+    width: fit-content;
+    margin: auto;
+}
