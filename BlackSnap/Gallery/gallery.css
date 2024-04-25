@@ -113,6 +113,7 @@ section#display {
 
 @media (max-width: 550px){
     header{
+        height: 65vh;
         text-align: center;
         & div> div{
             padding: 1rem;

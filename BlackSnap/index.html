@@ -46,17 +46,32 @@
         </a>
 
         <ul class="navnav">
-            <li>
-                <a href="">Home</a>
-            </li>
             <li class="active">
-                <a href="">Gallery</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="">About</a>
+                <a href="/Gallery/gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
             </li>
             <button class="connect">Connect</button>
         </ul>
+
+        <button id="mini-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 1.5C0 0.671631 0.671631 0 1.5 0H18.5C19.3284 0 20 0.671631 20 1.5C20 2.32837 19.3284 3 18.5 3H1.5C0.671631 3 0 2.32837 0 1.5ZM0 7.5C0 6.67163 0.671631 6 1.5 6H18.5C19.3284 6 20 6.67163 20 7.5C20 8.32837 19.3284 9 18.5 9H1.5C0.671631 9 0 8.32837 0 7.5ZM1.5 12C0.671631 12 0 12.6716 0 13.5C0 14.3284 0.671631 15 1.5 15H18.5C19.3284 15 20 14.3284 20 13.5C20 12.6716 19.3284 12 18.5 12H1.5Z"
+                    fill="white" />
+            </svg>
+        </button>
+        <button id="nav-exit">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m784.8 600 374.4-374.4c14.398-14.398 14.398-38.398 0-52.801l-132-132c-14.398-14.398-38.398-14.398-52.801 0l-374.4 374.4-374.4-374.4c-14.398-14.398-38.398-14.398-52.801 0l-132 132c-14.398 14.398-14.398 38.398 0 52.801l374.4 374.4-374.4 374.4c-14.398 14.398-14.398 38.398 0 52.801l132 132c14.398 14.398 38.398 14.398 52.801 0l374.4-374.4 374.4 374.4c14.398 14.398 38.398 14.398 52.801 0l132-132c14.398-14.398 14.398-38.398 0-52.801z" />
+            </svg>
+        </button>
     </nav>
 
     <div id="connection" style="display: none;">
@@ -77,13 +92,12 @@
 
                     <div class="col">
                         <label for="_subject">Subject</label>
-                        <input type="text" name="_subject" >
+                        <input type="text" name="_subject">
                     </div>
 
                     <div class="col">
                         <label for="message">Message</label>
-                        <textarea class="form-control" name="message" rows="10"
-                            required=""></textarea>
+                        <textarea class="form-control" name="message" rows="10" required=""></textarea>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
@@ -224,6 +238,7 @@
     </footer>
 
     <script src="featured.js"></script>
+    <script src="mininav.js"></script>
     <!-- <script src="featured.js"></script> -->
 </body>
 
