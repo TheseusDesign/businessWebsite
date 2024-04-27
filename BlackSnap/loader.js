@@ -16,8 +16,10 @@ function check(input) {
 // Code
 const loadCon = target(`#onload`)
 window.addEventListener('load', () => {
-    loadCon.style.opacity = '0'
+    setTimeout(() => {
+        loadCon.style.opacity = '0'
+    }, 500);
     setTimeout(() => {
         loadCon.style.display = 'none'
-    }, 1000);
+    }, 1500);
 });
