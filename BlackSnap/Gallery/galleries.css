@@ -163,7 +163,7 @@ section#display {
     }
 
     header {
-        height: 65vh;
+        height: auto;
         text-align: center;
 
         & div>div {
