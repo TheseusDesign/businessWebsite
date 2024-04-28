@@ -18,8 +18,8 @@ const loadCon = target(`#onload`)
 window.addEventListener('load', () => {
     setTimeout(() => {
         loadCon.style.opacity = '0'
-    }, 500);
+    }, 2000);
     setTimeout(() => {
         loadCon.style.display = 'none'
-    }, 1500);
+    }, 2500);
 });

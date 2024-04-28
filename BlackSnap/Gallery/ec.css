@@ -1,0 +1,37 @@
+header img{
+    object-position: top;
+}
+
+section#display .container img:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 3;
+}
+section#display .container img:nth-child(2){
+    grid-column: span 5;
+    grid-row: span 6;
+}
+section#display .container img:nth-child(3){
+    grid-column: span 4;
+    grid-row: span 6;
+}
+section#display .container img:nth-child(4){
+    grid-column: span 3;
+    grid-row: span 3;
+    object-position: top;
+}
+section#display .container img:nth-child(5){
+    grid-column: span 12;
+    grid-row: span 12;
+}
+
+@media(max-width: 700px){
+    section#display .container{
+        display: flex;
+        flex-direction: column;
+
+        & img{
+            height: 600px;
+            width: 100%;
+        }
+    }
+}

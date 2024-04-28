@@ -18,7 +18,7 @@ header {
     background: url(Assets/Background/home_index.jpg);
     background-size: cover;
     background-position: 45% 85%;
-    color: white;
+    color: var(--main-color-light);
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ header {
 section#quote {
     display: flex;
     padding: 3rem 1.5rem;
-    color: white;
+    color: var(--main-color-light);
 
     & p {
         max-width: 700px;
@@ -66,7 +66,7 @@ section#news {
     /* padding: 3rem 3rem; */
     gap: 3rem;
     flex-direction: row;
-    background-color: white;
+    background-color: var(--main-color-light);
     height: fit-content;
 
     &>div {
@@ -142,24 +142,28 @@ section#featured {
                 flex-direction: row;
                 flex-wrap: wrap;
 
-                &.isSelected {
+                &[aria-selected = "true"] {
                     display: flex;
+                    width: 100%;
+                    aspect-ratio: 16/9;
                 }
 
                 &>img {
                     width: 50%;
                     flex: 1;
                     min-width: 250px;
+                    object-fit: cover;
+                    height: 100%;
                 }
 
                 &>div {
                     width: 50%;
                     flex: 1;
-                    min-width: 350px;
+                    min-width: 250px;
                     display: flex;
                     flex-direction: column;
                     background-color: #121715;
-                    color: white;
+                    color: var(--main-color-light);
                     justify-content: center;
                     padding: 1rem;
                     gap: .5rem;
@@ -184,7 +188,7 @@ section#featured {
                         display: flex;
                         padding: 20px;
                         width: fit-content;
-                        color: white;
+                        color: var(--main-color-light);
                     }
                 }
             }
@@ -211,7 +215,7 @@ section#featured {
                 border: none;
                 opacity: 80%;
 
-                &.isSelected {
+                &[aria-selected = "true"] {
                     border: .75rem solid #EE5401;
                     opacity: 100%;
                 }
@@ -231,7 +235,7 @@ section#featured .selection::-webkit-scrollbar {
 }
 
 section#featured .selection::-webkit-scrollbar-track {
-    background-color: white;
+    background-color: var(--main-color-light);
 }
 
 section#featured .selection::-webkit-scrollbar-thumb {
@@ -261,12 +265,13 @@ section#services {
         gap: 24px;
 
 
-        & a {
+        &>div {
             display: flex;
             flex-grow: 1;
             padding: 2rem 3rem 2rem 0;
             background-color: grey;
             color: #121715;
+            text-decoration: underline;
             text-decoration-color: rgba(0, 0, 0, 0);
             width: 30px;
             min-width: 250px;
@@ -318,7 +323,7 @@ section#services {
 
 section#gallery {
     background-color: #121715;
-    color: white;
+    color: var(--main-color-light);
     text-align: center;
     padding: 3rem 0rem;
     display: flex;
@@ -343,7 +348,7 @@ section#gallery {
     }
 
     a {
-        color: white;
+        color: var(--main-color-light);
         font-size: 20px;
     }
 }
@@ -367,9 +372,16 @@ section#gallery {
     }
 }
 
+@media (max-width: 600px) {
+    section#featured>div.container .showcase>div > img{
+        height: auto;
+    }
+}
+
 @media (max-width: 500px) {
     section#services .services a {
         background-attachment: fixed !important;
+        background-position: 50% 5px;
         height: 85vh;
     }
 

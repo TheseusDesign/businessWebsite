@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 55vh;
-    color: white;
+    color: var(--main-color-light);
     justify-content: center;
     align-items: center;
 
@@ -43,8 +43,8 @@ header {
 }
 
 section#me{
-    background-color: white;
-    padding: 1rem;
+    background-color: var(--main-color-light);
+    padding: 5rem;
     justify-content: center;
     align-content: center;
     

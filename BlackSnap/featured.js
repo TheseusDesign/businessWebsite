@@ -34,35 +34,35 @@ function createSelection(destination) {
 // Pieces
 let photos = [
     {
-        name: "Destiny LaShon Cochran - 0",
-        thumbnail: "Assets/Featured/featured_1.jpg",
-        date: "unknown",
-        tags: "Fashion Photography",
-        link: "noLink",
+        name: "Embracing the Challenge",
+        thumbnail: "Gallery/imgs/embracing_challenge/ec05.jpg",
+        date: "",
+        tags: "Candid Photography",
+        link: "Gallery/embracing-challenge.html",
         color: "green"
     },
     {
-        name: "Destiny LaShon Cochran - 0",
-        thumbnail: "Assets/Featured/featured_2.jpg",
-        date: "unknown",
+        name: "Ignite",
+        thumbnail: "Gallery/imgs/destiny-lashon-chochran_fashion-show/dlc_fashion3.jpg",
+        date: "",
         tags: "Fashion Photography",
-        link: "noLink",
+        link: "Gallery/ignite.html",
         color: "green"
     },
     {
-        name: "Destiny LaShon Cochran - 0",
-        thumbnail: "Assets/Featured/featured_3.jpg",
-        date: "unknown",
+        name: "Princess",
+        thumbnail: "Gallery/imgs/princess/princess8.jpg",
+        date: "",
         tags: "Fashion Photography",
-        link: "noLink",
+        link: "Gallery/princess.html",
         color: "green"
     },
     {
-        name: "Destiny LaShon Cochran - 1",
-        thumbnail: "Assets/Featured/featured_4.jpg",
-        date: "unknown",
+        name: "Kleep Style",
+        thumbnail: "Gallery/imgs/kleep/kleep2.jpg",
+        date: "",
         tags: "Fashion Photography",
-        link: "noLink",
+        link: "Gallery/kleepstyle.html",
         color: "green"
     },
 ]
@@ -85,15 +85,32 @@ class featuredArt {
     create() {
         // Create Scene
         this.scene.innerHTML =`<img src="${this.thumbnail}" alt=""><div><h3>${this.name}</h3><p>${this.tag}</p><p>${this.date}</p><a href="${this.link}">View More</a></div>`
+        this.scene.setAttribute('role', `tabpanel`)
+        this.scene.setAttribute('data-tab-position', `${this.position}`)
         targetDiv.querySelector('.showcase').appendChild(this.scene)
         // Create Carousel Button
         this.button.setAttribute('style', `background: url(${this.thumbnail}); background-size:cover; background-position: 100% 40%;`)
+        this.button.setAttribute('role', `tab`)
+        this.button.setAttribute('data-tab-position', `${this.position}`)
         targetDiv.querySelector(`.selContainer`).appendChild(this.button)
 
         if (this.position == 0){
-            this.scene.setAttribute('class','isSelected')
-            this.button.setAttribute('class','isSelected')
+            this.scene.setAttribute('aria-selected','true')
+            this.button.setAttribute('aria-selected','true')
+        } else {
+            this.scene.setAttribute('aria-selected','false')
+            this.button.setAttribute('aria-selected','false')
         }
+
+
+        this.button.addEventListener('click',(elem)=>{
+            target('#featured').querySelectorAll(`[aria-selected="true"]`).forEach(function (elem){elem.setAttribute('aria-selected','false')})
+            console.log(elem.target)
+            console.log(elem.target.getAttribute("data-tab-position"))
+            targets(`[data-tab-position="${elem.target.getAttribute("data-tab-position")}"]`).forEach(function(elem){elem.setAttribute('aria-selected','true')})
+            console.log(target(`#featured`).querySelector(`.showcase`).querySelector(`[aria-selected="true"]`))
+            target(`#featured`).querySelector(`.showcase`).querySelector(`[aria-selected="true"]`).focus()
+        })
     }
 }
 let featuredOBJ = []
