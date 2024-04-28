@@ -44,7 +44,7 @@ header {
 
 section#me{
     background-color: var(--main-color-light);
-    padding: 5rem;
+    padding: 5rem 1rem;
     justify-content: center;
     align-content: center;
     
