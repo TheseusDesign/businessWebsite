@@ -319,6 +319,7 @@ div#connection {
             width: 100vw;
             opacity: 1;
             justify-content: center;
+            gap: 1rem;
 
 
             &>button#mini-nav {
