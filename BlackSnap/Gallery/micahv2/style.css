@@ -1,0 +1,50 @@
+header img {
+    object-position: 50% 40%;
+}
+
+section#display .container img:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 5;
+    object-position: top;
+}
+
+section#display .container img:nth-child(2) {
+    grid-column: span 4;
+    grid-row: span 5;
+    object-position: top;
+}
+
+section#display .container img:nth-child(3) {
+    grid-column: span 4;
+    grid-row: span 5;
+    object-position: top;
+}
+
+section#display .container img:nth-child(4) {
+    grid-column: span 7;
+    grid-row: span 7;
+    object-position: top;
+}
+
+section#display .container img:nth-child(5) {
+    grid-column: span 5;
+    grid-row: span 7;
+    object-position: top;
+}
+
+@media(max-width: 635px) {
+    header img {
+        object-position: 50% 40%;
+        height: 40vh;
+    }
+
+    section#display .container {
+        display: flex;
+        flex-direction: column;
+
+        & img {
+            height: 600px;
+            width: 100%;
+        }
+    }
+}
