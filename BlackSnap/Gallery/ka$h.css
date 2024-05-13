@@ -19,12 +19,12 @@ section#display .container img:nth-child(3) {
 }
 
 section#display .container img:nth-child(4) {
-    grid-column: span 4;
+    grid-column: span 8;
     grid-row: span 4;
 }
 
 section#display .container img:nth-child(5) {
-    grid-column: span 8;
+    grid-column: span 4;
     grid-row: span 4;
 }
 

@@ -15,13 +15,13 @@ header {
     display: flex;
     flex-direction: column;
     height: 75vh;
-    background: url(Assets/Background/home_index.jpg);
-    background-size: cover;
-    background-position: 45% 85%;
+    background: url(Assets/Background/home_index.jpg) no-repeat;
+    background-position: 60% 85%;
     color: var(--main-color-light);
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
+    background-size: cover;
+
 
     & h1 {
         font-size: 6vw;
@@ -41,11 +41,14 @@ header {
 
     & button {
         margin: 0 auto;
-        padding: 1rem 2rem;
+        padding: .75rem 2rem;
         font-size: 24px;
         font-family: "Kumbh Sans", sans-serif;
         font-weight: 300;
-        line-height: 100%;
+        color: var(--main-color-dark);
+        border-radius: 3px;
+        border: none;
+        /* line-height: 100%; */
     }
 }
 
@@ -142,7 +145,7 @@ section#featured {
                 flex-direction: row;
                 flex-wrap: wrap;
 
-                &[aria-selected = "true"] {
+                &[aria-selected="true"] {
                     display: flex;
                     width: 100%;
                     aspect-ratio: 16/9;
@@ -215,7 +218,7 @@ section#featured {
                 border: none;
                 opacity: 80%;
 
-                &[aria-selected = "true"] {
+                &[aria-selected="true"] {
                     border: .75rem solid #EE5401;
                     opacity: 100%;
                 }
@@ -319,6 +322,18 @@ section#services {
             }
         }
     }
+
+    & button {
+        margin: 0 auto;
+        padding: .5rem 1rem;
+        font-size: 18px;
+        font-family: "Kumbh Sans", sans-serif;
+        font-weight: 300;
+        color: var(--main-color-dark);
+        border-radius: 3px;
+        border: solid var(--main-color-dark) .25px;
+        /* line-height: 100%; */
+    }
 }
 
 section#gallery {
@@ -348,11 +363,16 @@ section#gallery {
     }
 
     a {
-        color: var(--main-color-light);
+        color: var(--main-color-light)!important;
         font-size: 20px;
     }
 }
 
+@media (min-width: 700px) {
+    header {
+        background-attachment: fixed;
+    }
+}
 
 @media (max-width: 700px) {
     section#news>div {
@@ -373,7 +393,7 @@ section#gallery {
 }
 
 @media (max-width: 600px) {
-    section#featured>div.container .showcase>div > img{
+    section#featured>div.container .showcase>div>img {
         height: auto;
     }
 }
