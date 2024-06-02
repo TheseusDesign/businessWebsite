@@ -22,6 +22,7 @@ section#display .container img:nth-child(4){
 section#display .container img:nth-child(5){
     grid-column: span 6;
     grid-row: span 4;
+    object-position: top;
 }
 
 @media(max-width: 700px){

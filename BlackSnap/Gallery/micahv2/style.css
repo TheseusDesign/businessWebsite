@@ -17,7 +17,7 @@ section#display .container img:nth-child(2) {
 section#display .container img:nth-child(3) {
     grid-column: span 4;
     grid-row: span 5;
-    object-position: top;
+    object-position: 75% 0%;
 }
 
 section#display .container img:nth-child(4) {

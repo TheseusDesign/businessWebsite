@@ -1,0 +1,182 @@
+/* Reference CLient - Web Concept Figma */
+
+section#display{
+    &[gallerytype="0"]{
+        & img:nth-child(1){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 8;
+            grid-row: span 6;
+        }
+        & img:nth-child(3){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(4){
+            grid-column: span 4;
+            grid-row: span 6;
+        }
+        & img:nth-child(5){
+            grid-column: span 4;
+            grid-row: span 6;
+        }
+        & img:nth-child(6){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+    }
+    &[gallerytype="1"]{
+        & img:nth-child(1){
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        & img:nth-child(2){
+            grid-column: span 5;
+            grid-row: span 6;
+        }
+        & img:nth-child(3){
+            grid-column: span 4;
+            grid-row: span 6;
+        }
+        & img:nth-child(4){
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        & img:nth-child(5){
+            grid-column: span 12;
+            grid-row: span 12;
+        }
+    }
+    &[gallerytype="2"]{        
+        & img:nth-child(1){
+            grid-column: span 5;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 7;
+            grid-row: span 4;
+        }
+        & img:nth-child(3){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(4){
+            grid-column: span 8;
+            grid-row: span 8;
+        }
+        & img:nth-child(5){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+    }
+    &[gallerytype="3"]{
+        & img:nth-child(1){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 8;
+            grid-row: span 4;
+        }
+        & img:nth-child(3){
+            grid-column: span 8;
+            grid-row: span 4;
+        }
+        & img:nth-child(4){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(5){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(6){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(7){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+    }
+    &[gallerytype="4"]{
+        & img:nth-child(1){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 8;
+            grid-row: span 4;
+        }
+        & img:nth-child(3){
+            grid-column: span 6;
+            grid-row: span 4;
+        }
+        & img:nth-child(4){
+            grid-column: span 6;
+            grid-row: span 8;
+        }
+        & img:nth-child(5){
+            grid-column: span 6;
+            grid-row: span 4;
+        }
+    }
+    &[gallerytype="5"]{
+        & img:nth-child(1){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 8;
+            grid-row: span 3;
+        }
+        & img:nth-child(3){
+            grid-column: span 8;
+            grid-row: span 3;
+        }
+        & img:nth-child(4){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(5){
+            grid-column: span 8;
+            grid-row: span 6;
+        }
+        & img:nth-child(6){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+    }
+    &[gallerytype="6"]{
+        & img:nth-child(1){
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        & img:nth-child(2){
+            grid-column: span 8;
+            grid-row: span 4;
+        }
+        & img:nth-child(3){
+            grid-column: span 6;
+            grid-row: span 8;
+        }
+        & img:nth-child(4){
+            grid-column: span 6;
+            grid-row: span 8;
+        }
+    }
+}
+
+@media(max-width: 700px){
+    section#display .container{
+        display: flex;
+        flex-direction: column;
+
+        & img{
+            height: 600px;
+            width: 100%;
+        }
+    }
+}
