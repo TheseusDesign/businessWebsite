@@ -1,0 +1,5 @@
+section#display img:nth-child(2){
+    object-position: 65%;
+    aspect-ratio: 4/3;
+    height: auto;
+}
