@@ -1,6 +1,7 @@
-body{
+body {
     overflow: unset;
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -96,26 +97,36 @@ header {
                 grid-template-rows: repeat(8, 112px);
                 grid-gap: 2rem;
 
+                &>* {
+                    overflow: hidden;
+
+                    &:nth-child(1) {
+                        grid-column: span 4;
+                        grid-row: span 5;
+                    }
+
+                    &:nth-child(2) {
+                        grid-column: span 8;
+                        grid-row: span 8;
+                    }
+
+                    &:nth-child(3) {
+                        grid-column: span 4;
+                        grid-row: span 3;
+                    }
+                }
+
                 & img {
                     object-fit: cover;
                     width: 100%;
                     height: 100%;
+
+                    &:hover {
+                        width: 115%;
+                        height: 115%;
+                    }
                 }
 
-                & img:nth-child(1) {
-                    grid-column: span 4;
-                    grid-row: span 5;
-                }
-
-                & img:nth-child(2) {
-                    grid-column: span 8;
-                    grid-row: span 8;
-                }
-
-                & img:nth-child(3) {
-                    grid-column: span 4;
-                    grid-row: span 3;
-                }
             }
 
             &>a {

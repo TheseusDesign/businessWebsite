@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    font-family: "Poppins",sans-serif;
+    --color_base: hsl(220, 70%, 40%);
+    --color_secondary: rgb(232, 233, 235);
+    --color_dark: rgb(0, 17, 51);
+    --color_light: hsl(205, 70%, 60%);
+    --color_black: rgb(33, 33, 33);
+    --color_white: hsl(0, 0%, 99%);
+    --color_base_opacitydec: hsla(220, 70%, 40%, 0.7);
+    --color_secondary_opacitydec: rgba(232, 233, 235,.7);
+    --color_dark_opacitydec: rgb(0, 17, 51,.7);
+    --color_light_opacitydec: rgb(37, 163, 255, .7);
+    --color_black_opacitydec: rgba(33, 33, 33, .7);
+    --color_white_opacitydec: rgba(252, 252, 252, .7);
+}
+
+h1{
+    line-height: 125%;
+    font-weight: 600;
+
+    .max{
+        line-height: 120%;
+    }
+}
+
+h2, h3{
+    line-height: 125%;
+    font-weight: 500;
+}
+
+p, li{
+    line-height: 150%;
+    font-weight: 300;
+}

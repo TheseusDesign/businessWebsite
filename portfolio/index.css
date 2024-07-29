@@ -1,0 +1,15 @@
+.about_me{
+    background-image: url(assets/img/background-0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content[data-cLayout="layout_0"] .txt{
+        background-color: var(--color_white_opacitydec);
+    }    
+}
+
+.support{
+    h2{
+        padding: 0 1rem;
+    }
+}

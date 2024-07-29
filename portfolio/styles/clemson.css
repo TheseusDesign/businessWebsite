@@ -1,0 +1,15 @@
+:root {
+    font-family: "Poppins",sans-serif;
+    --color_base: hsl(267, 48%, 34%);
+    --color_secondary: hsl(25, 100%, 48%);
+    --color_dark: hsl(267, 48%,  10%);
+    --color_light: hsl(25, 100%, 60%);
+    --color_black: rgb(33, 33, 33);
+    --color_white: hsl(0, 0%, 99%);
+    --color_base_opacitydec: hsla(267, 100%, 34%, 0.7);
+    --color_secondary_opacitydec: hsla(25, 100%, 48%,.7);
+    --color_dark_opacitydec: hsl(267, 100%,  10%,.7);
+    --color_light_opacitydec: hsl(25, 100%, 60%, .7);
+    --color_black_opacitydec: rgba(33, 33, 33, .7);
+    --color_white_opacitydec: rgba(252, 252, 252, .7);
+}

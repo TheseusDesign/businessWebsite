@@ -1,0 +1,14 @@
+.txt[data-txttype="hero"] h1 {
+    font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+    .txt[data-txttype="hero"] h1 {
+        font-size: 5rem;
+    }
+}
+
+.thumbnail{
+    background-color: var(--color_white);
+    padding: 5rem 1rem;
+}

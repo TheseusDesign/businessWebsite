@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "name": "Photography Website",
+            "client": "BlackSnap",
+            "thumbnail": "assets/img/blacksnap_thumbnail.png",
+            "link": "works/link",
+            "color":"rgba(11, 14, 13, .7)"
+        },
+        {
+            "name": "Convention Website",
+            "client": "Anime Weekend Atlanta",
+            "thumbnail": "assets/img/awa_thumbnail.png",
+            "link": "works/link",
+            "color":"hsla(341, 100%, 69%, .7)"
+        },
+        {
+            "name": "Giving Society",
+            "client": "Clemson University",
+            "thumbnail": "assets/img/clemson_thumbnail.png",
+            "link": "works/giving-society.html",
+            "color":"hsla(25, 100%, 48%, .7)"
+        },
+        {
+            "name": "Donor Reporting",
+            "client": "Georgia Tech",
+            "thumbnail": "assets/img/gtech_thumbnail.png",
+            "link": "works/link",
+            "color":"hsla(207, 100%, 17%, .7)"
+        }
+    ]
+}

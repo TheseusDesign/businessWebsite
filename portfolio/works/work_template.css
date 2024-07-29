@@ -1,0 +1,30 @@
+[data-formation="gallery_0"]{
+    >*{
+        width: 100%;
+        height: 100%;
+    }
+    >*:nth-child(1){
+        grid-column: span 12;
+        grid-row: span 6;
+    }
+    >*:nth-child(2){
+        grid-column: span 8;
+        grid-row: span 6;
+    }
+    >*:nth-child(3){
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    >*:nth-child(4){
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    >*:nth-child(5){
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+    >*:nth-child(6){
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+}
