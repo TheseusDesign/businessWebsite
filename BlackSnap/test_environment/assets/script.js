@@ -29,7 +29,7 @@ data = [
         ],
     },{
         'name': 'Micah',
-        'categories': 'Modeling Photoshoot',
+        'categories': 'Fashion Photography',
         'link': 'https://www.link.com',
         'date': '3.8.24',
         'imgs': [
@@ -39,8 +39,8 @@ data = [
             './featured/micah_4.jpg',
         ],
     },{
-        'name': 'Pricness Frenxh P3',
-        'categories': 'Modeling Photoshoot',
+        'name': 'Embracing the Challenge',
+        'categories': 'Candid Photography',
         'link': 'https://www.link.com',
         'date': '3.8.24',
         'imgs': [
@@ -51,7 +51,7 @@ data = [
         ],
     },{
         'name': 'Destiny',
-        'categories': 'Modeling Photoshoot',
+        'categories': 'Fashion Photography',
         'link': 'https://www.link.com',
         'date': '3.8.24',
         'imgs': [
@@ -61,39 +61,17 @@ data = [
             './featured/destiny_4.jpg',
         ],
     },{
-        'name': 'Pricness Frenxh',
-        'categories': 'Modeling Photoshoot',
+        'name': 'Kleep Style',
+        'categories': 'Fashion Photography',
         'link': 'https://www.link.com',
         'date': '3.8.24',
         'imgs': [
-            './princess/business-team-meeting-to-conference-2023-11-27-05-20-14-utc.jpg',
-            './princess/focus-on-laptop-screen-with-coded-data-and-pen-hel-2023-11-27-05-16-42-utc.jpg',
-            './princess/image-of-a-team-of-developers-brainstorming-ui-and-2023-11-27-05-23-47-utc.jpg',
-            './princess/male-employee-presenting-work-with-documents-2023-11-27-05-27-45-utc.jpg',
+            './featured/kleep_1.jpg',
+            './featured/kleep_2.jpg',
+            './featured/kleep_3.jpg',
+            './featured/kleep_4.jpg',
         ],
-    },{
-        'name': 'Pricness Frenxh',
-        'categories': 'Modeling Photoshoot',
-        'link': 'https://www.link.com',
-        'date': '3.8.24',
-        'imgs': [
-            './princess/business-team-meeting-to-conference-2023-11-27-05-20-14-utc.jpg',
-            './princess/focus-on-laptop-screen-with-coded-data-and-pen-hel-2023-11-27-05-16-42-utc.jpg',
-            './princess/image-of-a-team-of-developers-brainstorming-ui-and-2023-11-27-05-23-47-utc.jpg',
-            './princess/male-employee-presenting-work-with-documents-2023-11-27-05-27-45-utc.jpg',
-        ],
-    },{
-        'name': 'Pricness Frenxh',
-        'categories': 'Modeling Photoshoot',
-        'link': 'https://www.link.com',
-        'date': '3.8.24',
-        'imgs': [
-            './princess/business-team-meeting-to-conference-2023-11-27-05-20-14-utc.jpg',
-            './princess/focus-on-laptop-screen-with-coded-data-and-pen-hel-2023-11-27-05-16-42-utc.jpg',
-            './princess/image-of-a-team-of-developers-brainstorming-ui-and-2023-11-27-05-23-47-utc.jpg',
-            './princess/male-employee-presenting-work-with-documents-2023-11-27-05-27-45-utc.jpg',
-        ],
-    },
+    }
 ]
 
 featured_imgs = []

@@ -66,6 +66,9 @@ div:has(> .featuring) {
         scroll-snap-type: x mandatory;
         overflow: auto;
         align-items: center;
+        width: fit-content;
+        margin: auto;
+        max-width: 100%;
 
         div {
             scroll-snap-align: center;
